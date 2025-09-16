@@ -33,7 +33,7 @@ Data is exported as `stock_prices_2024.csv`.
 
 ### 2. `stock_data_2024.csv` — broker extract  
 Contains all broker-provided transactions for 2024 (buy/sell, dividends, etc.).  
-
+#####  [to look at the code](https://github.com/Nadiia1998/Stock_market_analysis_project/blob/main/jupyter_nothebook_code/stock_price_2024.ipynb)
 ---
 
 ### 3. Currency archive (NBP Table A, 2024)  
@@ -73,7 +73,7 @@ Jupyter Notebook connects to Snowflake to calculate **stock purchase value in PL
 - Apply **FIFO (First-In-First-Out)** to USD purchases.  
 - Convert USD→PLN using the **exchange rate of the day USD was bought**.  
 - Estimate final stock purchase value in PLN.  
-
+##### [to look at the code](https://github.com/Nadiia1998/Stock_market_analysis_project/blob/main/jupyter_nothebook_code/calculate_price_per_stock_buy_in_usd.ipynb)
 ---
 
 ### 9. Store results in `share_analysis_DB`  
