@@ -22,8 +22,24 @@ The project integrates several components:
 - **Jupyter Notebook**: environment for calculations in PLN, FIFO logic, and P&L analysis.  
 
 ---
-![Projec Scheme](./project_graph_scheme/stock_progject_grafic_schema.png) 
+![Projec Scheme](./project_graph_scheme/stock_progject_grafic_schema.png)
 
+---
+## Project Objectives
+
+The project is designed to address the following objectives:
+
+1. Calculate the amount of tax to be paid in Poland based on investment profit  -> [Review sql query](https://github.com/Nadiia1998/Stock_market_analysis_project/blob/main/sql_snowflake_code/tax_calculation_pln.SQL);
+2. Analyze how the portfolio value changes depending on month-over-month stock price fluctuations -> [Review sql query](https://github.com/Nadiia1998/Stock_market_analysis_project/blob/main/sql_snowflake_code/change_in_stock_price_MOM.SQl);
+3. Provide additional valuable insights, including -> [Review sql query](https://github.com/Nadiia1998/Stock_market_analysis_project/blob/main/sql_snowflake_code/stock_analysis_query.SQL):  
+   - Stock weight in the portfolio  
+   - Total shares, total cost, and average cost per company  
+   - Total spend (USD & PLN)  
+   - Total portfolio value  
+   - Monthly investment trend  
+   - Earnings from non-invested funds  
+
+ ---    
 ### 1. Download stock prices and export to CSV  
 Daily stock prices (`open`, `close`) are downloaded using the **`yfinance`** library.  
 Only tickers from the investment portfolio are included.  
@@ -42,10 +58,15 @@ Used for USD→PLN conversion.
 - If 15% withheld in the US, pay 4% difference.  
 - Conversion rate = **day before purchase**.  
 
+
 ---
 
 ### 4. Upload CSV files to AWS S3  
-Local files (`stock_prices_2024.csv`, `stock_data_2024.csv`, `archive_tab_A_2024.csv`) are uploaded into S3.  
+Local files (`stock_prices_2024.csv`, `stock_data_2024.csv`, `archive_tab_A_2024.csv`) are uploaded into S3.
+
+---
+
+[Review a DDL query in 5–7 steps](https://github.com/Nadiia1998/Stock_market_analysis_project/blob/main/sql_snowflake_code/DDL_script.sql)
 
 ---
 
