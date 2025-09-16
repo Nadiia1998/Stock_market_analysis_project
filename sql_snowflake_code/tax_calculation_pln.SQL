@@ -61,10 +61,10 @@ WITH stocks_cte AS (
     FROM currency_rates
 )
 
-// condition : 
-//             If in 'stocks' table  day of week ='MONDAY'-> in 'currency_rates' table day pf week = 'FRIDAY';
-//             If in 'stocks' table  date=2024-12-27'-> in 'currency_rates' date = '2024-12-24';
-//             Else stock_date=(currency_date-1);
+/* condition : 
+             If in 'stocks' table  day of week ='MONDAY'-> in 'currency_rates' table day pf week = 'FRIDAY';
+             If in 'stocks' table  date=2024-12-27'-> in 'currency_rates' date = '2024-12-24';
+*/             Else stock_date=(currency_date-1);
 
 SELECT s.*,
        c.currency_date,
