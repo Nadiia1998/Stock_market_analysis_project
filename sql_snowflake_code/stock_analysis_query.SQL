@@ -1,4 +1,4 @@
----- This query is created to answer the following questions:
+---- Objectives of this query are::
 -- 1. Stock weight in the portfolio
 -- 2. Total shares, total cost, and average cost per company
 -- 3. Total spend (USD & PLN)
